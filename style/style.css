@@ -1,209 +1,71 @@
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+
+
+.bg-light {
+  background-color: white!important;
+}
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.navbar {
+ 
+}
+article{
+  text-align: center;
+  margin-top:2em;
+  margin-left: 10%;
+  margin-right: 10%;
+  
+  padding: 0%;
+}
+.wallpaper{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 102%;
+  border-radius: 17%;
+}
+.logo{
+  margin-left: auto;
+
+
+  
+}
+.form-inline{
+
+  background: white;
+  border-radius: 0.5%;
+  
+}
+.btn {
+  margin-left: 20px;
+}
+
+.footer{
+  text-align: center;
+  color: gray;
 }
 
 body {
-  background: white;
-}
-
-h2 {
-  font-family: "Source Sans Pro", sans-serif;
-  font-size: 1.6rem;
-  text-align: center;
-  color: #000000;
-}
-
-
-
-.navbar {
-  overflow: hidden;
-  background-color: white(64, 234, 22);
-  position: fixed;
-  /* Set the navbar to fixed position */
-  top: 0;
-  /* Position the navbar at the top of the page */
-  width: 100%;
-  /* Full width */
-}
-
-/* Links inside the navbar */
-.navbar a {
-  float: left;
-  display: block;
-  color: black;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  justify-content: ;
-}
-
-/* Change background on mouse-over */
-.navbar a:hover {
-  background: #ddd;
-  color: black;
-}
-
-/* Main content */
-.main {
-  margin-top: 30px;
-  /* Add a top margin to avoid content overlay */
-}
-
-.jumbotron {
   background-color: white;
-  min-height: 300px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column nowrap;
-          flex-flow: column nowrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 16px;
-  padding-bottom: 60px;
-  
-}
-.jumbotron h1, .jumbotron p {
-  font-family: "Source Sans Pro", sans-serif;
-  font-size: 3.6rem;
-  font-weight: bold;
 }
 @media screen and (max-width: 600px) {
-  .jumbotron h1, .jumbotron p {
-    font-size: 2.4rem;
+  body {
+     background-color: white;
+     
   }
-}
-.jumbotron h1 {
-  margin-top: 100px;
-}
-@media screen and (max-width: 600px) {
-  .jumbotron h1 {
-    margin-top: 60px;
-  }
-}
-.jumbotron p {
-  font-size: 1.4rem;
-  text-align: center;
-  max-width: 600px;
-  font-weight: 300;
-  color: #7510F7;
-}
-.jumbotron img {
-  border-radius: 100px;
-  height: 280px;
-  border-color: #7510F7;
-  margin-top: 20px;
-}
-@media screen and (max-width: 600px) {
-  .jumbotron img {
-    margin-top: 60px;
-    height: 140px;
-  }
-}
-
-.portfolio-links {
-  color: black;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
-  height: 40px;
-  padding: 0;
-  margin-top: 30px;
-}
-
-.icons {
-  margin: 0 20px;
-  cursor: pointer;
-  color: black;
-}
-.icons:hover {
-  color: #7510F7;
-}
-
-.portfolio {
-  border-bottom: 1px solid #7510F7;
-}
-.portfolio h2 {
-  margin-bottom: 0;
-}
-.portfolio .portofolio-gallery {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-.portfolio .portofolio-gallery img {
-  max-width: 280px;
-  -webkit-transform: scale(0.9);
-          transform: scale(0.9);
-}
-.portfolio .portofolio-gallery img:hover {
-  -webkit-transform: scale(1);
-          transform: scale(1);
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-}
-@media screen and (max-width: 600px) {
-  .portfolio .portofolio-gallery {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: column;
-            flex-flow: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .portfolio .portofolio-gallery img {
-    max-width: 200px;
-  }
-}
-
-.about-me {
-  border-bottom: 1px solid #7510F7;
-  margin-bottom: 20px;
-  margin-top: 10px;
-}
-.about-me p {
-  margin: 0 10px;
-  font-size: large;
-  font-family: "BioRhyme", serif;
-  margin-bottom: 14px;
-}
-
-.footer {
-  text-align: center;
-  color: white;
-  padding: 8px;
-  background: #7510F7;
-}
-
-@media screen and (max-width: 600px) {
-  .skills {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-  }
-}
-@media screen and (max-width: 1200px) {
-  .skills {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-  }
-}
-@media screen and (max-width: 600px) {
-
+  img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    
+   }
 }
