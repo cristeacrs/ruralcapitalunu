@@ -3,6 +3,14 @@
 .bg-light {
   background-color: white!important;
 }
+#map {
+  height: 300px;
+  /* The height is 400 pixels */
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  /* The width is the width of the web page */
+}
 .column {
   float: left;
   width: 33.33%;
@@ -31,13 +39,45 @@ article{
   margin-left: auto;
   margin-right: auto;
   width: 102%;
-  border-radius: 17%;
+  
+}
+.fade-in {
+  animation: fadeIn ease 10s;
+  -webkit-animation: fadeIn ease 10s;
+  -moz-animation: fadeIn ease 10s;
+  -o-animation: fadeIn ease 10s;
+  -ms-animation: fadeIn ease 10s;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 102%;
+}
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
 }
 .logo{
-  margin-left: auto;
-
-
-  
+  margin-left: auto;  
 }
 .form-inline{
 
