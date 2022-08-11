@@ -7,8 +7,9 @@ function initMap() {
   const map = new google.maps.Map(document.getElementById("map"), {
     zoom: 12,
     center: uluru,
+    mapTypeId: google.maps.MapTypeId.HYBRID,
   });
-  mapType: "satellite";
+
   // The marker, positioned at Uluru
   const marker = new google.maps.Marker({
     position: uluru,
